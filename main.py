@@ -12,9 +12,13 @@ from dotenv import load_dotenv
 load_dotenv()
 app = FastAPI()
 
-client = OpenAI(
-    api_key = os.getenv('OPENAI_API_KEY') 
-)
+# client = OpenAI(
+#     api_key = os.getenv('OPENAI_API_KEY') 
+# )
+
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 templates = Jinja2Templates(directory="templates")
 
