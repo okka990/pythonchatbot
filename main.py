@@ -250,7 +250,7 @@ async def chat(websocket: WebSocket):
 
 
 
-# 	except Exception as e:
+# 	except Exception as e:	
 # 		return templates.TemplateResponse(
 # 		"image.html",{"request":request,"datas":datas,"error":f"Error generate image : {str(e)}"}
 
