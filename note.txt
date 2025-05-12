@@ -1,0 +1,128 @@
+a=> ChatGPT
+1. charGPT is a webapplication , will generate a response
+	Articles
+	social media 
+	coede and more...
+2. chatGPT is a product from openAI , openAi company (lauch in 2022)
+
+=> Open Api's (applicatio programming interface)
+to be able to create our own chatbots that are seperate from chatgpt
+
+=> openAi Modules
+GPT-3.5 , GPT-4   = text
+DALL.E 			  = image	
+Whisper			  = audio to text	 
+
+=> Cost
+OpenAi API's cost is based on that model and tokens
+
+=> Tokens
+1 token  1word (3/4 Character )
+100 token 60word (300/400 character)
+
+=> Tokenizer
+
+https://platform.openai.com/tokenizer
+
+
+?=> install open ai
+
+login -> api platform
+
+install openAi
+pip install openai
+
+=> get python codes
+
+https://platform.openai.com/docs/overview?lang=python
+
+Docs > Overview > OpenAI developer platform 
+
+from openai import OpenAI
+client = OpenAI()
+completion = client.chat.completions.create(
+model="gpt-4o",
+store=True,
+messages=[
+{"role": "user", "content": "write a haiku about ai"}
+]
+)
+
+
+
+=> Install others
+
+https://fastapi.tiangolo.com/
+https://www.uvicorn.org/
+pip install fastapi uvicorn
+
+
+pip install python-mutipart 
+
+https://jinja.palletsprojects.com/en/stable/
+https://pypi.org/project/aiofiles
+pip install aiofiles jinja2
+
+pip3 list or pip list
+
+
+mdkir part3chatbot
+cd part3chatbot/
+python3 -m venv fastapienv
+ls
+source fastapienv/bin/activate
+pip3 list
+
+---------------------------------------------------
+
+uvicorn post:app --reload
+
+10IN
+
+
+
+18IN
+
+
+
+https://platform.openai.com/playground/prompts?models=gpt-4o
+
+platform.openai.com > playground > prompt
+
+Roles
+system = Context Setter
+assistant = Responder
+user = Questioner  
+
+
+
+-----------------------------------------------------------------
+
+1. create file
+.env
+
+2. install python dotenv
+https://pypi.org/
+sudo apt install python3-dotenv
+
+3 . import
+import os
+from dotenv import load_dotenv
+-----------------------------------------------------------------
+
+
+=> websocket (v )
+
+1. install
+https://fastapi.tiangolo.com/reference/exceptions/?h=websocket
+
+pip install websockets
+
+
+2. import
+from fastapi import FastAPI, WebSocket
+
+
+-----------------------------------------------------------------
+
+deploy on render.com
